@@ -1,0 +1,13 @@
+local local_projects_path = "${PROJECT_PATH}"
+
+local ${PROJECT_NAME} = {
+	name = "${PROJECT_NAME}",
+	root = local_projects_path .. "${PROJECT_NAME}",
+	ai_base_url="http://${URL}",
+	auth_token="lmstudio",
+	model_name="${MODEL_NAME}",
+}
+
+return {
+	${PROJECT_NAME},
+}
