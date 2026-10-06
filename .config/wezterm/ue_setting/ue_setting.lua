@@ -32,7 +32,7 @@ local function open_ue_project(window, pane, project)
 			"-NoExit",
 			"-Command",
 			"Set-Location '" .. root .. "';",
-			"lms log stream;",
+			"lms log stream --source server;",
 		}
 	}
 
