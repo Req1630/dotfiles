@@ -2,6 +2,7 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 
 return {
+    disable_default_key_bindings = true,
   keys = {
     { key = 'Tab',		mods = 'CTRL', 			action = act.ActivateTabRelative(1) },
     { key = 'Tab',		mods = 'SHIFT|CTRL', 		action = act.ActivateTabRelative(-1) },
